@@ -1,3 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-style: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 body{
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9e4c74;
+    position: relative;
+}
+
+main{
+    width: 50vw;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 20px;
+    border-radius: 5%;
+    background-color: #f1a7b4;
+}
+
+main form{
+    width: 80%;
+}
+
+main form .input-group{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+main form .input-group label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+main form .input-group input{
+    border: 1px solid #9e4c74;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.1s;
+
+}
+
+main form .input-group input:focus{
+ outline: #9e4c74;
+}
+
+main form .input-group input:hover{
+    border: 3px solid #9e4c74;
+    transition: 0.1s;
+
+}
+
+main form .input-group textarea{
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.1s;
+
+}
+
+main form .input-group textarea:hover{
+    border: 3px solid #9e4c74;
+    transition: 0.1s;
+}
+
+main form .input-group textarea:focus{
+ outline: #9e4c74;
+}
+
+main form .input-group textarea{
+    width: 100%;
+    border: 1px solid #9e4c74;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main .pageTitle{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+main form .btn-conferir{
+    width: 150px;
+    height: 40px;
+    justify-self: flex-end;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #9e4c74;
+    color: white;
+    border: none;
+    transition: 0.1s;
+
+}
+
+main form .btn-conferir:hover{
+    background-color: #fff;
+        border: 1px solid #9e4c74;
+    color: #9e4c74;
+    transition: 0.1s;
+}
+
+
+ 
+form .botoes-confirmar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, form a{
+    width: 45%;
+    height: 40px;
+
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: 0.1s;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+form .btn-cancelar{
+    background-color: #fff;
+    color: #9e4c74;
+    border: 1px solid #9e4c74;
+    text-align: center;
+}
+
+form .btn-enviar{
+    background-color: #9e4c74;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+form .btn-enviar:hover{
+    background-color: #fff;
+    color: #9e4c74;
+    border: 1px solid #9e4c74;
+}
+
+form .btn-cancelar:hover{
+    background-color: #9e4c74;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+main.concluido{
+    border-radius: 15px;
 }
